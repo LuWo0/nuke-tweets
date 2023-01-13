@@ -93,4 +93,5 @@ As mentioned above, the API to delete tweets is rate limited to 50 requests per 
 * `screen -r` to reattach the screen
 
 ### Unliking Tweets
+* `node unlikeTweets.js`
 Usage: node unlikeTweets.js
