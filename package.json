@@ -1,4 +1,13 @@
 {
+  "name": "luwo0-tweet-nuke",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "LuWo0",
+  "license": "ISC",
   "dependencies": {
     "command-line-args": "^5.2.1",
     "dotenv": "^16.0.3",

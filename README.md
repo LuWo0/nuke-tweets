@@ -56,10 +56,10 @@ TWITTER_ACCESS_SECRET=<Access token secret>
 ## Run the script
 
 ### Command-line arguments
-
-* `node twitterWipe.js --help`
+### Deleting Tweets
+* `node deleteTweets.js --help`
 ```
-Usage: node twitterWipe.js [options]
+Usage: node deleteTweets.js [options]
 Options:
   -h, --help        Show this help message
   -d, --dry-run     Do not actually delete tweets
@@ -88,6 +88,9 @@ If using both start and end time linits, your start time must be *before* your e
 As mentioned above, the API to delete tweets is rate limited to 50 requests per 15 minutes but the script automatically handles rate limit responses, retries, and sleeps. If you have a large number of tweets, you can roughly calculate how long the script will take to run. I recommend running it in `screen` but the script can be easily resumed if it's interrupted for some reason:
 
 * `screen`
-* `node twitterWipe.js | tee output.log`
+* `node deleteTweets.js | tee output.log`
 * `Ctrl A-d` to detach the screen
 * `screen -r` to reattach the screen
+
+### Unliking Tweets
+Usage: node unlikeTweets.js
